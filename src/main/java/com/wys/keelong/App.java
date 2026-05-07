@@ -8,6 +8,10 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        KeelungSightsCrawler crawler = new KeelungSightsCrawler();
+        Sight [] sights = crawler.getItems("中山");
+        for (Sight s: sights) {
+            System.out.println(s);
+        }
     }
 }
